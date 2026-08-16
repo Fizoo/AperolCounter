@@ -1,0 +1,26 @@
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 14px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+}
+.header-title {
+  font-size: 20px; font-weight: 700; letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.6) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.header-actions { display: flex; gap: 8px; align-items: center; }
+.btn-journal { padding: 0 14px; width: auto; font-size: 13px; font-weight: 600; gap: 5px; white-space: nowrap; }
+
+.cards-container { padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+.add-card-wrap { padding: 0 16px 30px; }
+.add-card-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 20px; border-radius: var(--radius); border: 2px dashed rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.02); color: var(--text-dim); font-size: 16px; font-weight: 600;
+  cursor: pointer; transition: var(--transition); width: 100%; letter-spacing: 0.3px;
+}
+.add-card-btn:active { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.3); color: var(--text); }
+.plus-icon { font-size: 22px; }
